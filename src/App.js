@@ -3,12 +3,14 @@ import React from "react";
 // Import SearchBar component from components directory
 import SearchBar from "./components/SearchBar";
 
+import SearchImages from "./apis/api";
+
 // Define App component as a functional component
 function App() {
   // Define handleSubmit function that takes a search term as parameter
-  const handleSubmit = (term) => {
-    // Log the search term to console for debugging
-    console.log("do a search with", term);
+  const handleSubmit = async (term) => {
+    const result = await SearchImages(term);
+    console.log(result);
   };
 
   // Return JSX that renders the SearchBar component

@@ -16,7 +16,7 @@ const searchImages = async (term) => {
   });
 
   // Log the response for debugging
-  console.log(response.data.results);
+  //console.log(response.data.results);
   // Return the response data
   return response;
 };
