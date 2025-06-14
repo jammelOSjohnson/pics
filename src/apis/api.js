@@ -18,7 +18,7 @@ const searchImages = async (term) => {
   // Log the response for debugging
   //console.log(response.data.results);
   // Return the response data
-  return response;
+  return response.data.results;
 };
 
 // Export the searchImages function as default
